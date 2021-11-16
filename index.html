@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>TODOList</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <script src="./js/main.js"></script>
+
+    <div class="container">
+        <a id = "todo" href="index.html">
+            <img src="./img/todo.png" width="200px" height="100px" alt="">
+        </a>
+        <div id="create">
+            <h3>INPUT</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="">Title:</label>
+                    <input type="text" name="" id="title">
+                </div>
+                <div class="col-md-6">
+                    <label for="">Description:</label>
+                    <input type="text" name="" id="desc">
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="">Begin:</label>
+                    <input type="datetime-local" name="" id="timeBegin">
+                </div>
+                <div class="col-md-4">
+                    <label for="">End:</label>
+                    <input type="datetime-local" name="" id="timeEnd">
+                </div>
+                <div class="col-md-4">
+                    <button id="btnAdd" class="btn btn-info">Add Task</button>
+                </div>
+            </div>   
+        </div>
+        <div id="edit">
+            <h3>EDIT</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="">Title:</label>
+                    <input type="text" name="" id="edit_title">
+                </div>
+                <div class="col-md-6">
+                    <label for="">Description:</label>
+                    <input type="text" name="" id="edit_desc">
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="">Begin:</label>
+                    <input type="datetime-local" name="" id="edit_timeBegin">
+                </div>
+                <div class="col-md-4">
+                    <label for="">End:</label>
+                    <input type="datetime-local" name="" id="edit_timeEnd">
+                </div>
+                <div class="col-md-4">
+                    <button id="btnUpdate" class="btn btn-info" onclick="updateTask()">Update Task</button>
+                </div>
+            </div>   
+        </div>     
+    </div>
+    <h2>LISTtodo --- LET'S HARD-WORKING AND I WILL HAVE A HOTGIRL GIRL FRIEND </h2>
+    <hr>
+    <div id="root_nochange" class="container">
+        <div class="row">
+            <div class="col-md-1 title">ID</div>
+            <div class="col-md-2 title">TITTLE</div>
+            <div class="col-md-2 title">DESCRIPTION</div>
+            <div class="col-md-2 title">TIME-BEGIN</div>            
+            <div class="col-md-2 title">TIME-END</div>
+            <div class="col-md-1">
+                <button class = "btn btn-info">Edit</button>
+            </div>
+            <div class="col-md-1">
+                <button class = "btn btn-warning">Delete</button>
+            </div>
+            <div class="col-md-1">
+                <button class = "btn btn-success">Complete</button>
+            </div>   
+        </div>
+    </div>
+    <div id="root" class="container">
+
+    </div>
+</body>
+</html>
